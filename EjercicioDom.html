@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            background-color: #b0c4de;
+            padding: 20px;
+            border-bottom: 5px solid #4a5a70;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .section-title {
+            background-color: #b0c4de;
+            color: white;
+            padding: 10px;
+            margin: 20px 0 10px;
+            border-bottom: 3px solid #4a5a70;
+        }
+
+        .section-content {
+            padding: 10px;
+            border: 1px solid #b0c4de;
+        }
+
+        .personal-info, .education, .experience, .skills, .language {
+            margin-bottom: 20px;
+        }
+
+        .personal-info img {
+            float: left;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .personal-info div {
+            overflow: hidden;
+        }
+
+        .personal-info p {
+            margin: 5px 0;
+        }
+
+        .education ul, .experience ul, .language ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .education li, .experience li, .language li {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            background-color: #d3d3d3;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Currículum Vitae de Cristian Alexander González Cen</h1>
+            <p>Este es un ejemplo de currículum vitae. Cualquier parecido con la realidad es pura coincidencia</p>
+        </div>
+
+        <div class="personal-info">
+            <h2 class="section-title">Datos personales</h2>
+            <div class="section-content">
+                <img id="imagen" src="https://i.pinimg.com/736x/ab/85/1e/ab851e94e660659a0fb18fc5d46ed933.jpg" alt="Foto de Cristian Alexander González Cen" width="150" height="150">
+                <div>
+                    <p><strong>Nombre y Apellidos:</strong> Cristian Alexander González Cen</p>
+                    <p><strong>Teléfono:</strong> 9999015673</p>
+                    <p><strong>Email:</strong> CrisAlex887@gmail.com</p>
+                    <p><strong>Nacionalidad:</strong> Mexicano</p>
+                    <p><strong>Fecha de hoy:</strong> 12 de febrero de 2000</p>
+                    <p><strong>CURP:</strong> GoCC041230HYNNNRA9</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h2 class="section-title" style="background-color: #ff6347;">Experiencia laboral</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Ninguna, pero por algo se empieza. Hoy en la actualidad, la música no es mucha.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2 class="section-title" style="background-color: #ff6347;">Educación y formación</h2>
+            <div class="section-content">
+                <ul>
+                    <li>2023-2026: Universidad Tecnológica Metropolitana</li>
+                    <li>1908-2012: Universidad Inventada y no se por qué xd</li>
+                </ul>
+            </div>
+        </div>
+        <p>Juan</p>
+
+        <div class="skills">
+            <h2 class="section-title" style="background-color: #4682b4;">Capacidades y aptitudes personales</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Hablo español</li>
+                    <li>Hablo inglés</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="language">
+            <h2 class="section-title" style="background-color: #4682b4;">Hábitos</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Escuchar música</li>
+                    <li>Leer el alquimista</li>
+                    <li>Ver La casita de los dibujos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p id="demo"></p>
+    <p id="p1">Hola Mundo</p>
+
+    <script>
+        const element = document.getElementById("intro");
+   
+        document.getElementById("p1").innerHTML = "¡Nuevo Texto!";
+    </script>
+
+    <h1 id="titulo">Encabezado Viejo</h1>
+
+    <script>
+        const elemento = document.getElementById("titulo");
+        elemento.innerHTML = "Nuevo Encabezado";
+   
+        const elementa = document.getElementsByName("p");
+    </script>
+
+
+    <div id="main">
+        <p>Párrafo dentro de main</p>
+        <p>Otro párrafo dentro de main</p>
+    </div>
+    <script>
+        window.onload = function() {
+        const mainElement = document.getElementById("main");
+        console.log(mainElement);
+        const paragraphs = mainElement.getElementsByTagName("p");
+        console.log(paragraphs);
+        }
+    </script>
+
+
+<p class="intro">Este es un ejemplo 1</p>
+  <p class="intro">Este es un ejemplo 2</p>
+  <p class="intro">Este es un ejemplo 3</p>
+
+  <script>
+    const x = document.getElementsByClassName("intro");
+    console.log(x);
+  </script>
+
+<p class="intro">este es un ejemplo</p>
+<p class="intro">esto es otro ejemplo</p>
+
+<script>
+	const xL = document.querySelectorAll("p.intro");
+</script>
+
+
+<script>
+    const listItems = document.querySelectorAll("ul > li")
+    console.log(listItems);
+
+    const h1Element = document.querySelector("h1");
+    console.log(h1Element);
+</script>
+
+
+<div class="list">Lista de elementos</div>
+
+<script>
+  const listElement = document.querySelector(".list");
+  console.log(listElement);
+</script>
+
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+  </ul>
+
+  <script>
+    const listaDeElementos = document.querySelectorAll("ul > li");
+
+    listaDeElementos.forEach((item) => {
+      console.log(item);
+    });
+  
+    const h1 = document.querySelector("h1");
+    h1.style.color = "blue";
+  </script>
+
+
+<form id="frm1">
+    <input type="text" name="campo1" value="Valor 1">
+    <input type="text" name="campo2" value="Valor 2">
+    <input type="text" name="campo3" value="Valor 3">
+    <input type="submit" value="Enviar">
+  </form>
+  <p id="demo"></p>
+
+  <script>
+    window.onload = function() {
+      const formElement = document.forms["frm1"];
+      let texto = "";
+      for (let i = 0; i < formElement.length; i++) {
+        texto += formElement.elements[i].value + "<br>";
+      }
+      document.getElementById("demo").innerHTML = texto;
+      console.log(formElement);
+    }
+  </script>
+
+<button id="btn">Haz click aquí</button>
+
+<script>
+  const button = document.getElementById("btn");
+  button.addEventListener("click", () => {
+    alert("Gracias por dar click");
+  });
+
+
+    function validarFormulario() {
+	let x = document.forms["miFormulario"]["nombre"].value;
+	if (x = ""){
+		alert("Se debe completar el nombre");
+		return false;
+	}
+}
+</script>
+
+<input type="text" id="numero" placeholder="Ingresa un número entre 1 y 10">
+<button type="button" onclick="miFunction()">Validar</button>
+<p id="demo"></p>
+
+<script>
+  function miFunction() {
+    let x = document.getElementById("numero").value;
+    let texto;
+    if (isNaN(x) || x < 1 || x > 10) {
+      texto = "Entrada no válida";
+    } else {
+      texto = "Entrada correcta";
+    }
+    document.getElementById("demo").innerHTML = texto;
+  }
+
+    document.getElementById("imagen").src = "https://img.clubimagenes.com/ci/hola/hola_009.jpg";
+
+    document.get.elementById("demo").innerHTML = "Fecha: "+Date();
+</script>
+
+</body>
+</html>
